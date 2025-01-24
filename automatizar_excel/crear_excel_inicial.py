@@ -125,6 +125,9 @@ def crear_excel_inicial():
 
     # Escribir datos
     for row_idx, fila in enumerate(datos,2):
+        
+        #print(f"Row idx: {row_idx}\nFila:{fila}")
+
         for col_idx, valor in enumerate(fila,1):
             celda = ws.cell(row=row_idx, column=col_idx)
             celda.value = valor
